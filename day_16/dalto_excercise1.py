@@ -14,6 +14,15 @@ user_grade = input("Write your grade: ")
 
 
 first_student = Student(user_name, user_age, user_grade)
+
+correct_answer = True
+while correct_answer:
+    answer = input("What do you want the student does?: ")
+    if answer.lower() == "study":
+        first_student.study()
+        correct_answer = False
+
+
 print("***Successful student creation***")
 print(f"Name: {first_student.name}")
 print(f"Age: {first_student.age}")
