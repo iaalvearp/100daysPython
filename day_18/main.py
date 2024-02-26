@@ -46,12 +46,24 @@ color_list = ["AntiqueWhite4", "blue4", "BlueViolet", "brown4", "burlywood4", "C
 # drawing(10)
 
 directions = [0, 90, 180, 270]
+# My solution to the stroke size
+# tim.width(10)
+# Angela's solution to stroke size
+tim.pensize(10)
+tim.speed()
 # Challenge 4
-for _ in range(100):
-    tim.width(10)
+# My solution
+# for _ in range(100):
+#     tim.color(choice(color_list))
+#     tim.forward(25)
+#     tim.left(choice(directions))
+#     tim.forward(25)
+
+for _ in range(200):
     tim.color(choice(color_list))
-    tim.forward(25)
-    tim.left(choice(directions))
+    tim.forward(30)
+    tim.setheading(choice(directions))
+
 
 screen = Screen()
 screen.exitonclick()
